@@ -1,5 +1,5 @@
 Name: fricas
-Version: 1.1.5
+Version: 1.1.6
 Release: 1
 
 Summary: FriCAS Computer Algebra System
@@ -32,7 +32,6 @@ branch of the Axiom project.
 
 %build
 
-#configure --with-lisp=sbcl
 %configure --with-lisp=clisp
 %make
 
@@ -46,7 +45,7 @@ install -D -m644 %SOURCE2 %{buildroot}/%{_iconsdir}/%name.png
 install -D -m644 %SOURCE3 %{buildroot}/%{_iconsdir}/%name.png
 
 # menu items
-install -D -m644 %SOURCE4 %buildroot%_desktopdir/%name.desktop
+install -D -m644 %SOURCE4 %{buildroot}/%{_datadir}/applications/%name.desktop
 
 %files
 %{_bindir}/*
