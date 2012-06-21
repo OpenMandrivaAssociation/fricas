@@ -1,12 +1,12 @@
 Name: fricas
-Version: 1.1.6
+Version: 1.1.7
 Release: 1
 
 Summary: FriCAS Computer Algebra System
 License: Modified BSD License
 Group: Sciences/Mathematics
 Url: http://fricas.sourceforge.net
-Source0: fricas-%version-full.tar.bz2
+Source0: http://downloads.sourceforge.net/project/fricas/fricas/%{version}/%{name}-%{version}-full.tar.bz2
 Source1: %name-16.png
 Source2: %name-32.png
 Source3: %name-48.png
