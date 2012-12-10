@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+#Encoding=UTF-8
+Name=FriCAS 
+Name[ru]=FriCAS 
+Comment=FriCAS Computer Algebra System
+Comment[ru]=Система аналитических вычислений FriCAS
+Icon=fricas
+Exec=axiom
+Terminal=true
+Categories=Education;Science;Math;

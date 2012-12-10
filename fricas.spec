@@ -1,7 +1,6 @@
 Name: fricas
-Version: 1.1.7
-Release: 1
-
+Version: 1.1.8
+Release: 2
 Summary: FriCAS Computer Algebra System
 License: Modified BSD License
 Group: Sciences/Mathematics
@@ -11,12 +10,10 @@ Source1: %name-16.png
 Source2: %name-32.png
 Source3: %name-48.png
 Source4: %name.desktop
-
-Requires: sbcl = 1.0.51
-
+Requires: sbcl
 Conflicts: axiom
-
-BuildRequires: xpm-devel clisp
+BuildRequires: pkgconfig(xpm)
+BuildRequires: clisp
 BuildRequires: sbcl
 
 %description
@@ -40,12 +37,12 @@ branch of the Axiom project.
 
 %makeinstall_std
 # icons
-install -D -m644 %SOURCE1 %{buildroot}/%{_iconsdir}/%name.png
-install -D -m644 %SOURCE2 %{buildroot}/%{_iconsdir}/%name.png
-install -D -m644 %SOURCE3 %{buildroot}/%{_iconsdir}/%name.png
+install -D -m644 %SOURCE1 %{buildroot}%{_miconsdir}/%name.png
+install -D -m644 %SOURCE2 %{buildroot}%{_iconsdir}/%name.png
+install -D -m644 %SOURCE3 %{buildroot}%{_liconsdir}/%name.png
 
 # menu items
-install -D -m644 %SOURCE4 %{buildroot}/%{_datadir}/applications/%name.desktop
+install -D -m644 %SOURCE4 %{buildroot}%{_datadir}/applications/%name.desktop
 
 %files
 %{_bindir}/*
@@ -53,3 +50,15 @@ install -D -m644 %SOURCE4 %{buildroot}/%{_datadir}/applications/%name.desktop
 %{_iconsdir}/*/
 %{_libdir}/%name/*
 %doc README FAQ CHA* Cha*
+
+
+%changelog
+* Thu Jun 21 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.1.7-1
++ Revision: 806605
+- version update 1.1.7
+
+* Mon Feb 20 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.1.6-1
++ Revision: 778072
+- version update 1.1.6
+- imported package fricas
+
