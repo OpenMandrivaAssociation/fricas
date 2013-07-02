@@ -1,6 +1,6 @@
 Name: fricas
 Version: 1.1.8
-Release: 2
+Release: 3
 Summary: Computer Algebra System
 License: Modified BSD License
 Group: Sciences/Mathematics
