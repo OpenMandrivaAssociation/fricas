@@ -1,6 +1,8 @@
+%define __noautoreq '.*/bin/awk|.*/bin/gawk'
+
 Name: fricas
 Version: 1.1.8
-Release: 3
+Release: 4
 Summary: Computer Algebra System
 License: Modified BSD License
 Group: Sciences/Mathematics
