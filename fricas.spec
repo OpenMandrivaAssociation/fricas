@@ -6,7 +6,7 @@ Release: 5
 Summary: Computer Algebra System
 License: Modified BSD License
 Group: Sciences/Mathematics
-Url: http://fricas.sourceforge.net
+Url: https://fricas.sourceforge.net
 Source0: http://downloads.sourceforge.net/project/fricas/fricas/%{version}/%{name}-%{version}-full.tar.bz2
 Source1: %name-16.png
 Source2: %name-32.png
