@@ -14,6 +14,11 @@ Source3: %name-48.png
 Source4: %name.desktop
 Requires: sbcl
 Conflicts: axiom
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: pkgconfig(xpm)
 BuildRequires: clisp
 BuildRequires: sbcl
